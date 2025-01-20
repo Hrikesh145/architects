@@ -9,7 +9,7 @@
 
 /* share style */
 .display-flex{
-    display:flex
+    display:flex;
 }
 .dark-02{
     color: #424242;
@@ -67,4 +67,66 @@
 .banner-text{
     font-size: 1rem;
 }
+.banner-img{
+    width: 100%;
+}
 
+/* Main Section */
+main{
+    max-width: 1440px;
+    margin:0 auto;
+}
+main>section{
+    margin-top: 130px;
+}
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.teams-title{
+    font-weight: 400;
+    font-size: 2.8rem;
+}
+.of-our{
+    font-weight: bold;
+    color:black;
+
+
+}
+.span-features{
+    font-weight: 700;
+    color: #FF900E;
+}
+.features{
+    margin-left: 130px;
+}
+/* Media q */
+/* small */
+@media screen and (max-width: 576px) { 
+    .navbar, .nav-links,.teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features{
+        margin-left: 20px;
+        
+    }
+}
+
+/* medium */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .features{
+        margin: 50px auto;
+
+    }
+}
